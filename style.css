@@ -1,0 +1,164 @@
+:root
+{
+    --backgroundColor: #F9EFDC;
+    --fontAdamina: Adamina;
+    --buttonColor: #e2b89e;
+    --input-focus: #c4a18c;
+    --input-color:#E5E7EB;
+    --btn-hover-color: #c4a18c;
+
+}
+
+@font-face {
+    font-family: Adamina;
+    src: url(resources/Adamina.ttf);
+    font-weight: bolder;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--backgroundColor);
+}
+
+.container{
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-size: cover;
+}
+
+
+
+.logo{
+    width: 100px;
+    height: 100px;
+
+}
+
+.sidePhoto{
+    background-image: url("resources/sidePhoto.webp");
+    height: 959px;
+    width: 1024px;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.shadow{
+    background-color: black;
+    border: 2px black solid;
+    /* position: fixed; */
+    width: 51.4%;
+    height: 120px;
+    z-index: 0;
+    opacity: 0.3;
+    margin-top: 10rem;
+    position: absolute;
+    justify-self: center;
+}
+.title{
+    font-family: var(--fontAdamina);
+    margin-left: 2rem;
+    color: white;
+    align-self: center;
+}
+.logoContainer{
+    margin-top: 10.8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+fieldset{
+    border: none;
+    display: flex;
+}
+
+.form_row  {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formContainer{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form{
+    display: flex;
+    background-color: white;
+    padding-left: 2rem;
+    justify-content: flex-start;
+    box-shadow: 0px 3px 25px -18px black;
+
+}
+
+input{
+    margin-top: 3px;
+    border: 2px var(--input-color) solid;
+    border-radius: 4px;
+    height: 20px;
+    transition: all .3s;
+    width: 250px;
+}
+
+input:invalid
+{
+    border: 2px red solid;
+    outline: none;
+}
+
+.rightColumn{
+    margin-left: 3rem;
+}
+
+input:focus{
+    border: 2px var(--input-focus) solid;
+    outline: none;
+    box-shadow: 4px 4px 5px -5px black;
+}
+
+h2{
+    margin-left: 0.5rem;
+}
+
+.bottomPart{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-left: 3rem;
+}
+
+.btn{
+    border: none;
+    background-color: var(--buttonColor);
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+    transition: all .3s;
+}
+
+.btn:hover{
+    background-color:var(--btn-hover-color);
+}
+
+a{
+    text-decoration: none;
+    color: var(--buttonColor);
+    font-weight: bold;
+}
+a:hover{
+    color: var(--btn-hover-color);
+}
